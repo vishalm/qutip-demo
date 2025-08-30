@@ -5,6 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![QuTiP](https://img.shields.io/badge/QuTiP-5.0+-green.svg)](https://qutip.org/)
+[![Qiskit](https://img.shields.io/badge/Qiskit-1.0+-blue.svg)](https://www.ibm.com/quantum/qiskit)
 
 This demo project showcases the powerful capabilities of [QuTiP (Quantum Toolbox in Python)](https://qutip.org/) through interactive visualizations and simulations of quantum systems. QuTiP is the world's most popular open-source quantum physics simulation library, used by researchers and educators worldwide.
 
@@ -19,10 +20,11 @@ qutip-demo/
 ├── 📦 requirements.txt             # Python dependencies
 ├── 🚫 .gitignore                   # Git ignore rules
 ├── 📁 demos/                       # 🎪 Core Demonstrations
-│   ├── 🌐 bloch_rabi_demo.py       # Bloch sphere & Rabi oscillations
-│   ├── 🌀 decoherence_demo.py      # Quantum decoherence effects
-│   ├── 🔬 cavity_qed_demo.py       # Cavity QED & quantum optics
-│   └── 🎮 interactive_demo.py      # Interactive real-time controls
+│   ├── 🌐 bloch_rabi_demo.py       # Bloch sphere & Rabi oscillations (QuTiP)
+│   ├── 🌀 decoherence_demo.py      # Quantum decoherence effects (QuTiP)
+│   ├── 🔬 cavity_qed_demo.py       # Cavity QED & quantum optics (QuTiP)
+│   ├── 🎮 interactive_demo.py      # Interactive real-time controls (QuTiP)
+│   └── 🔑 bernstein_vazirani_demo.py # Quantum algorithms (Qiskit)
 ├── 📁 utils/                       # 🛠️ Utilities & Tools
 │   ├── 🚀 run_demos.py             # Demo launcher & menu
 │   ├── ✅ verify_installation.py   # Installation verification
@@ -38,12 +40,13 @@ qutip-demo/
         ├── 🔬 cavity_qed_rabi.png
         ├── 📊 photon_statistics.png
         ├── 🎮 interactive_demo.png
+        ├── 🔑 bernstein_vazirani_qiskit.png
         └── 🚀 demo_launcher.png
 ```
 
 ## 🎯 Demo Overview
 
-This demonstration highlights QuTiP's key strengths through several compelling quantum physics simulations:
+This demonstration highlights both **QuTiP** (open quantum systems) and **Qiskit** (quantum computing) through several compelling quantum physics simulations:
 
 1. **Bloch Sphere Visualization & Rabi Oscillations** - Interactive visualization of qubit states and dynamics
 2. **Quantum Decoherence Effects** - See how quantum systems lose coherence over time
@@ -141,10 +144,11 @@ python utils/verify_installation.py
 python utils/run_demos.py
 
 # Or run individual demos directly
-python demos/bloch_rabi_demo.py
-python demos/decoherence_demo.py
-python demos/cavity_qed_demo.py
-python demos/interactive_demo.py
+python demos/bloch_rabi_demo.py           # QuTiP: Bloch sphere
+python demos/decoherence_demo.py          # QuTiP: Decoherence
+python demos/cavity_qed_demo.py           # QuTiP: Cavity QED
+python demos/interactive_demo.py          # QuTiP: Interactive
+python demos/bernstein_vazirani_demo.py   # Qiskit: BV Algorithm
 ```
 
 ## ✅ Recent Updates & Fixes

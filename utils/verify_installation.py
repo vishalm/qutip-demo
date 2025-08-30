@@ -76,6 +76,7 @@ def main():
         'demos/decoherence_demo.py', 
         'demos/cavity_qed_demo.py',
         'demos/interactive_demo.py',
+        'demos/bernstein_vazirani_demo.py',
         'utils/run_demos.py'
     ]
     
@@ -94,8 +95,10 @@ def main():
     
     print("\n" + "=" * 50)
     
-    if all_deps_ok and qutip_ok and files_ok:
+    if all_deps_ok and qutip_ok and files_ok and qiskit_ok:
         print("🎉 SUCCESS! Everything is properly installed and ready to use.")
+    elif all_deps_ok and qutip_ok and files_ok:
+        print("✅ QuTiP demos ready! Qiskit demos require additional installation.")
         print("\n🚀 You can now run the demos:")
         print("   python utils/run_demos.py")
         print("\n📚 Or run individual demos:")
@@ -105,7 +108,7 @@ def main():
         return True
     else:
         print("❌ ISSUES DETECTED. Please fix the problems above.")
-        if not all_deps_ok:
+        if not all_deps_ok or not qiskit_ok:
             print("\n💡 To install missing dependencies:")
             print("   pip install -r requirements.txt")
         return False

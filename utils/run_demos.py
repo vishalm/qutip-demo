@@ -91,7 +91,15 @@ def run_demo(choice):
             interactive_demo.main()
             
         elif choice == '5':
-            print("📊 Running All Demos...")
+            print("🔑 Starting Bernstein-Vazirani Algorithm Demo...")
+            import sys
+            import os
+            sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'demos'))
+            import bernstein_vazirani_demo
+            bernstein_vazirani_demo.main()
+            
+        elif choice == '6':
+            print("📊 Running All QuTiP Demos...")
             import sys
             import os
             sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'demos'))
@@ -114,10 +122,10 @@ def run_demo(choice):
             import cavity_qed_demo
             cavity_qed_demo.main()
             
-            print("\n🎉 All demos completed!")
+            print("\n🎉 All QuTiP demos completed!")
             
         else:
-            print("❌ Invalid choice. Please select 1-5 or 0 to exit.")
+            print("❌ Invalid choice. Please select 1-6 or 0 to exit.")
             return False
             
         return True

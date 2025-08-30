@@ -5,3 +5,7 @@ matplotlib>=3.5.0
 jupyter>=1.0.0
 ipywidgets>=7.6.0
 tqdm>=4.62.0
+
+# Qiskit dependencies for quantum computing demos
+qiskit>=1.0.0
+qiskit-aer>=0.13.0
