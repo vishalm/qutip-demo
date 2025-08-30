@@ -53,7 +53,7 @@ def main():
     """Main screenshot generation function."""
     demos = {
         'bloch': {
-            'script': 'bloch_rabi_demo.py',
+            'script': 'demos/bloch_rabi_demo.py',
             'description': 'Bloch sphere visualization and Rabi oscillations',
             'moments': [
                 'Bloch sphere with trajectory (save as: bloch_sphere_rabi.png)',
@@ -62,7 +62,7 @@ def main():
             ]
         },
         'decoherence': {
-            'script': 'decoherence_demo.py', 
+            'script': 'demos/decoherence_demo.py', 
             'description': 'Quantum decoherence and open system dynamics',
             'moments': [
                 'Main decoherence comparison plots (save as: decoherence_comparison.png)',
@@ -71,7 +71,7 @@ def main():
             ]
         },
         'cavity': {
-            'script': 'cavity_qed_demo.py',
+            'script': 'demos/cavity_qed_demo.py',
             'description': 'Cavity QED and quantum optics demonstrations', 
             'moments': [
                 'Vacuum Rabi oscillations (save as: cavity_qed_rabi.png)',
@@ -80,7 +80,7 @@ def main():
             ]
         },
         'interactive': {
-            'script': 'interactive_demo.py',
+            'script': 'demos/interactive_demo.py',
             'description': 'Interactive demo with real-time controls',
             'moments': [
                 'Full interface with sliders and plots (save as: interactive_demo.png)',
@@ -88,7 +88,7 @@ def main():
             ]
         },
         'launcher': {
-            'script': 'run_demos.py',
+            'script': 'utils/run_demos.py',
             'description': 'Demo launcher menu',
             'moments': [
                 'Terminal with main menu displayed (save as: demo_launcher.png)'

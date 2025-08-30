@@ -72,11 +72,11 @@ def main():
     
     print(f"\n📄 Checking Demo Files:")
     demo_files = [
-        'bloch_rabi_demo.py',
-        'decoherence_demo.py', 
-        'cavity_qed_demo.py',
-        'interactive_demo.py',
-        'run_demos.py'
+        'demos/bloch_rabi_demo.py',
+        'demos/decoherence_demo.py', 
+        'demos/cavity_qed_demo.py',
+        'demos/interactive_demo.py',
+        'utils/run_demos.py'
     ]
     
     files_ok = True
@@ -97,10 +97,11 @@ def main():
     if all_deps_ok and qutip_ok and files_ok:
         print("🎉 SUCCESS! Everything is properly installed and ready to use.")
         print("\n🚀 You can now run the demos:")
-        print("   python run_demos.py")
+        print("   python utils/run_demos.py")
         print("\n📚 Or run individual demos:")
-        for demo in demo_files[:-1]:  # Exclude run_demos.py
-            print(f"   python {demo}")
+        for demo in demo_files:
+            if demo.startswith('demos/'):
+                print(f"   python {demo}")
         return True
     else:
         print("❌ ISSUES DETECTED. Please fix the problems above.")

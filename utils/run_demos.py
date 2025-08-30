@@ -60,26 +60,42 @@ def run_demo(choice):
     try:
         if choice == '1':
             print("🎯 Starting Bloch Sphere & Rabi Oscillations Demo...")
+            import sys
+            import os
+            sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'demos'))
             import bloch_rabi_demo
             bloch_rabi_demo.main()
             
         elif choice == '2':
             print("🌀 Starting Quantum Decoherence Demo...")
+            import sys
+            import os
+            sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'demos'))
             import decoherence_demo
             decoherence_demo.main()
             
         elif choice == '3':
             print("🔬 Starting Cavity QED Demo...")
+            import sys
+            import os
+            sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'demos'))
             import cavity_qed_demo
             cavity_qed_demo.main()
             
         elif choice == '4':
             print("🎮 Starting Interactive Demo...")
+            import sys
+            import os
+            sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'demos'))
             import interactive_demo
             interactive_demo.main()
             
         elif choice == '5':
             print("📊 Running All Demos...")
+            import sys
+            import os
+            sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'demos'))
+            
             print("\n" + "="*60)
             print("Demo 1/3: Bloch Sphere & Rabi Oscillations")
             print("="*60)

@@ -12,40 +12,33 @@ This demo project showcases the powerful capabilities of [QuTiP (Quantum Toolbox
 
 ## 📁 Project Structure
 
-```mermaid
-graph TD
-    A["🎯 qutip-demo/"] --> B["📋 README.md"]
-    A --> C["📦 requirements.txt"]
-    A --> D["🚀 run_demos.py"]
-    A --> E["🎪 Demo Scripts"]
-    
-    E --> F["🌐 bloch_rabi_demo.py<br/>Bloch Sphere & Rabi Oscillations"]
-    E --> G["🌀 decoherence_demo.py<br/>Quantum Decoherence"]
-    E --> H["🔬 cavity_qed_demo.py<br/>Cavity QED"]
-    E --> I["🎮 interactive_demo.py<br/>Real-time Controls"]
-    
-    F --> J["Bloch Sphere Visualization"]
-    F --> K["Quantum Gates Demo"]
-    F --> L["Animated Evolution"]
-    
-    G --> M["T1 Relaxation"]
-    G --> N["T2 Dephasing"]
-    G --> O["Open vs Closed Systems"]
-    
-    H --> P["Jaynes-Cummings Model"]
-    H --> Q["Vacuum Rabi Oscillations"]
-    H --> R["Photon Statistics"]
-    
-    I --> S["Interactive Sliders"]
-    I --> T["Real-time Plots"]
-    I --> U["Educational Panels"]
-
-    style A fill:#e1f5fe
-    style E fill:#f3e5f5
-    style F fill:#e8f5e8
-    style G fill:#fff3e0
-    style H fill:#fce4ec
-    style I fill:#e0f2f1
+```
+qutip-demo/
+├── 📋 README.md                    # Project documentation
+├── 📄 LICENSE                      # MIT License
+├── 📦 requirements.txt             # Python dependencies
+├── 🚫 .gitignore                   # Git ignore rules
+├── 📁 demos/                       # 🎪 Core Demonstrations
+│   ├── 🌐 bloch_rabi_demo.py       # Bloch sphere & Rabi oscillations
+│   ├── 🌀 decoherence_demo.py      # Quantum decoherence effects
+│   ├── 🔬 cavity_qed_demo.py       # Cavity QED & quantum optics
+│   └── 🎮 interactive_demo.py      # Interactive real-time controls
+├── 📁 utils/                       # 🛠️ Utilities & Tools
+│   ├── 🚀 run_demos.py             # Demo launcher & menu
+│   ├── ✅ verify_installation.py   # Installation verification
+│   └── 📸 generate_screenshots.py  # Screenshot helper tool
+├── 📁 docs/                        # 📚 Documentation
+│   └── 📝 CONTRIBUTING.md          # Contribution guidelines
+└── 📁 resources/                   # 🖼️ Visual Resources
+    └── 📁 screenshots/             # Demo screenshots
+        ├── 🌐 bloch_sphere_rabi.png
+        ├── 🚪 quantum_gates_bloch.png
+        ├── 🌀 decoherence_comparison.png
+        ├── 📉 coherence_loss.png
+        ├── 🔬 cavity_qed_rabi.png
+        ├── 📊 photon_statistics.png
+        ├── 🎮 interactive_demo.png
+        └── 🚀 demo_launcher.png
 ```
 
 ## 🎯 Demo Overview
@@ -135,7 +128,7 @@ pip install -r requirements.txt
 
 3. Verify installation (recommended):
 ```bash
-python verify_installation.py
+python utils/verify_installation.py
 ```
 
 4. Run the demos:
@@ -145,13 +138,13 @@ python verify_installation.py
 
 ```bash
 # Easy demo launcher (recommended)
-python run_demos.py
+python utils/run_demos.py
 
-# Or run individual demos
-python bloch_rabi_demo.py
-python decoherence_demo.py
-python cavity_qed_demo.py
-python interactive_demo.py
+# Or run individual demos directly
+python demos/bloch_rabi_demo.py
+python demos/decoherence_demo.py
+python demos/cavity_qed_demo.py
+python demos/interactive_demo.py
 ```
 
 ## ✅ Recent Updates & Fixes
@@ -172,11 +165,14 @@ To complete the visual documentation, add screenshots by running the demos and c
 
 ```bash
 # Run demos and take screenshots
-python bloch_rabi_demo.py        # Capture: Bloch sphere plots
-python decoherence_demo.py       # Capture: Decoherence comparisons  
-python cavity_qed_demo.py        # Capture: Cavity QED dynamics
-python interactive_demo.py       # Capture: Interactive interface
-python run_demos.py              # Capture: Demo launcher menu
+python demos/bloch_rabi_demo.py        # Capture: Bloch sphere plots
+python demos/decoherence_demo.py       # Capture: Decoherence comparisons  
+python demos/cavity_qed_demo.py        # Capture: Cavity QED dynamics
+python demos/interactive_demo.py       # Capture: Interactive interface
+python utils/run_demos.py              # Capture: Demo launcher menu
+
+# Or use the screenshot helper
+python utils/generate_screenshots.py
 ```
 
 Save screenshots as PNG files in `resources/screenshots/` with names matching the README placeholders. See `resources/screenshots/PLACEHOLDER.md` for detailed instructions.
@@ -490,6 +486,7 @@ mindmap
 - [GitHub Discussions](https://github.com/vishalm/qutip-demo/discussions) - Ask questions and share ideas
 - [GitHub Issues](https://github.com/vishalm/qutip-demo/issues) - Report bugs and request features
 - [QuTiP Google Group](https://groups.google.com/forum/#!forum/qutip) - Official QuTiP community
+- [Contributing Guidelines](docs/CONTRIBUTING.md) - How to contribute to this project
 
 ## 🤝 Contributing
 
