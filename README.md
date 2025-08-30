@@ -482,10 +482,11 @@ mindmap
 - [Quantum Optics Book](https://qutip.org/qutip-tutorials/quantum-optics/) - Quantum optics with QuTiP
 - [Research Papers](https://qutip.org/papers/) - Academic papers using QuTiP
 
-### 🤝 Community
+### 🤝 Community & Documentation
 - [GitHub Discussions](https://github.com/vishalm/qutip-demo/discussions) - Ask questions and share ideas
 - [GitHub Issues](https://github.com/vishalm/qutip-demo/issues) - Report bugs and request features
 - [QuTiP Google Group](https://groups.google.com/forum/#!forum/qutip) - Official QuTiP community
+- [Setup Guide](docs/SETUP.md) - Detailed project structure and setup instructions
 - [Contributing Guidelines](docs/CONTRIBUTING.md) - How to contribute to this project
 
 ## 🤝 Contributing
