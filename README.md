@@ -175,7 +175,7 @@ python utils/run_demos.py              # Capture: Demo launcher menu
 python utils/generate_screenshots.py
 ```
 
-Save screenshots as PNG files in `resources/screenshots/` with names matching the README placeholders. See `resources/screenshots/PLACEHOLDER.md` for detailed instructions.
+Save screenshots as PNG files in `resources/screenshots/` with names matching the README image references.
 
 ## 🎮 Demo Execution Flow
 
